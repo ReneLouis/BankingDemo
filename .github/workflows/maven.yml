@@ -43,7 +43,7 @@ jobs:
         name: Package
         path: staging
         
-    - run: mkdir tests && cp target/surefire-reports/*.txt
+    - run: mkdir tests && cp target/surefire-reports
     - uses: actions/upload-artifact@v3
       with:
         name: Tests
